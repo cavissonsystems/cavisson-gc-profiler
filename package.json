@@ -1,0 +1,56 @@
+{
+  "name": "cavisson-gc-profiler",
+  "description": "Allows you to profile when the garbage collector runs, and how long it takes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sahil dhall"
+  },
+  "main": "./main.js",
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahildhall/cavisson-gc-profiler.git"
+  },
+  "binary": {
+    "module_name": "GcProfiler",
+    "module_path": "./build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{version}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "host" : "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
+  },
+  "keywords": [
+    "gc",
+    "garbage",
+    "profile",
+    "performance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.0.8",
+    "node-pre-gyp": "^0.6.5"
+  },
+  "scripts": {
+    "preinstall": "node -e 'process.exit(0)'",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "rebuild": "node-gyp rebuild",
+    "test": "mocha"
+  },
+  "gitHead": "ddfe19a6265a7c4bbe8cb9e6c748ddecc1b24c9f",
+  "homepage": "https://github.com/sahildhall/cavisson-gc-profiler#readme",
+  "_id": "cavisson-gc-profiler@1.0.0",
+  "_shasum": "c69cba8d43596f248b16f4a30d7d657b47512394",
+  "_from": "cavisson-gc-profiler@latest",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "cavissonsystems",
+    "email": "balasudheer2802@gmail.com"
+  },
+  "dist": {
+    "shasum": "c69cba8d43596f248b16f4a30d7d657b47512394",
+    "tarball": "https://registry.npmjs.org/cavisson-gc-profiler/-/cavisson-gc-profiler-1.0.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cavisson-gc-profiler/-/cavisson-gc-profiler-1.0.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
