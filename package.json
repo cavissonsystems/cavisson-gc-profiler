@@ -1,7 +1,7 @@
 {
   "name": "cavisson-gc-profiler",
   "description": "Allows you to profile when the garbage collector runs, and how long it takes.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Sahil dhall"
   },
@@ -16,7 +16,7 @@
     "module_path": "./build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
     "remote_path": "./{module_name}/v{version}/",
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
-    "host" : "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
+    "host": "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
   },
   "keywords": [
     "gc",
