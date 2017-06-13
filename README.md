@@ -3,7 +3,7 @@
 A cross-platform (tested on Linux, Windows, and OSX) profiler for the v8 garbage collector running inside Node.js. It will emit an event after every GC cycle providing you information about the duration and type of cycle.
 
 ```
-npm install gc-profiler
+npm install cavisson-gc-profiler
 ```
 
 Example:
