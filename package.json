@@ -1,7 +1,7 @@
 {
   "name": "cavisson-gc-profiler",
   "description": "Allows you to profile when the garbage collector runs, and how long it takes.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": {
     "name": "Sahil dhall"
   },
@@ -31,7 +31,6 @@
   },
   "scripts": {
     "preinstall": "node -e 'process.exit(0)'",
-    "install": "node-pre-gyp install --fallback-to-build",
     "rebuild": "node-gyp rebuild",
     "test": "mocha"
   },
