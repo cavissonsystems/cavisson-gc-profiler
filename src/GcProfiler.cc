@@ -40,7 +40,8 @@ namespace GcProfiler
 #endif
 	
 	// function prototypes
-	void Init(v8::Local<v8::Object> exports, v8::Local<v8::Object> module);
+	//void Init(v8::Local<v8::Object> exports, v8::Local<v8::Object> module);
+	NAN_MODULE_INIT(Init);
 	NAN_METHOD(LoadProfiler);
 	NAN_GC_CALLBACK(Before);
 	NAN_GC_CALLBACK(After);
@@ -53,12 +54,17 @@ namespace GcProfiler
 	NODE_MODULE(GcProfiler, Init)
 	
 	// --- functions ---
-	
+	/*
 	void Init (v8::Local<v8::Object> exports, v8::Local<v8::Object> module)
 	{
-		exports->Set(Nan::New("loadProfiler").ToLocalChecked(), Nan::New<v8::FunctionTemplate>(LoadProfiler)->GetFunction());
+		exports->Set(Nan::New("LoadProfiler").ToLocalChecked(), Nan::New<v8::FunctionTemplate>(LoadProfiler)->GetFunction());
 	}
-
+	*/
+	
+	NAN_MODULE_INIT(Init)
+	{
+		NAN_EXPORT(target, LoadProfiler);
+	}
 
 	void LoadProfiler(const Nan::FunctionCallbackInfo<v8::Value>& info)
 	{
