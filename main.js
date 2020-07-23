@@ -27,7 +27,7 @@ main.GCCallbackFlags = {
 	kGCCallbackFlagForced: 1 << 2
 };
 
-GcProfiler.LoadProfiler(function (startTime, ms, type, flags)
+GcProfiler.loadProfiler(function (startTime, ms, type, flags)
 {
 	var info = {
 		date: new Date(startTime * 1000),
