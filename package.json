@@ -3,7 +3,7 @@
   "description": "Allows you to profile when the garbage collector runs, and how long it takes.",
   "version": "1.0.15",
   "author": {
-    "name": "Sandeep Ohdar"
+    "name": "CAVISSON (Sarang Shekhar)"
   },
   "main": "./main.js",
   "gypfile": true,
