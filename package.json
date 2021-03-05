@@ -1,7 +1,7 @@
 {
   "name": "cavisson-gc-profiler",
   "description": "Allows you to profile when the garbage collector runs, and how long it takes.",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "author": {
     "name": "CAVISSON (Sarang Shekhar)"
   },
